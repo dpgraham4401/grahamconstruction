@@ -1,48 +1,34 @@
-# Stone: Astro Theme
+# Graham Construction
 
-Stone is a free and open-source Astro theme specially designed for Business, Marketing, SaaS and Startup websites.
+Graham Construction is a local construction company based out of Dallas-Fort Worth, Texas. They specialize 
+in residential construction and remodeling projects. This project is a redesign of their current website.
 
 ## Key Features:
 
 - **Built with Tailwind CSS & Alpine.js**
-- **5+ Pages**
-- **15+ Sections**
 - Clean & Modern Design
 - Fully Responsive
 - Dark & Light Mode
 - Fast & Performant
-- Super Lightweight
-- View Transitions (experimental)
+- Lightweight
+- View Transitions 
 - **Prettier** Code Formatter
 - **Google Fonts**
 - **Remix Icons**
-- Free Updates
 
 ## Getting Started
 
-### Requirements
-
-- Basic knowledge of Astro, HTML and CSS.
-- Text editor (We recommend Visual Studio Code)
-- Node.js 18 or higher.
-
 ### Install dependencies
-
-Navigate to your project folder and install its dependencies:
 
 ```
 npm install
 ```
 
-### Start
-
-Once the installation is done, you can now run your app:
+### Development Server
 
 ```
 npm run dev
 ```
-
-This runs the app in development mode. Open http://localhost:3000 to view it in the browser.
 
 ### Build
 
@@ -83,13 +69,11 @@ Inside the project, you'll see the following folders and files:
 - `tailwind.config.cjs` - Tailwind configuration file. The theme section is where you define your color palette and fonts.
 - `tsconfig.json` - TypeScript configuration file.
 
+For additional information, see the [official documentation](https://docs.astro.build/).
+
 ## Deployment
 
 Ready to build and deploy your site? Follow the [official documentation](https://docs.astro.build/en/guides/deploy/).
-
-## Support
-
-If you have any questions or suggestions do not hesitate to contact me.
 
 ## License
 
