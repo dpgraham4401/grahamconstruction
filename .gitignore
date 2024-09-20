@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # vscode folder
 .vscode
+
+# .idea folder
+.idea
