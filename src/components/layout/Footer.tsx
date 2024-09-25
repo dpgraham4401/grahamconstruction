@@ -1,4 +1,3 @@
----
 const bottomLinks = [
   {
     header: 'Social',
@@ -66,43 +65,43 @@ const bottomLinks = [
     ],
   },
 ];
----
 
-<footer
-  class="mt-16 bg-primary-500/10 py-16 dark:bg-primary-400/10 lg:mt-20 lg:py-20"
-  aria-labelledby="footer-heading"
->
-  <h2 id="footer-heading" class="sr-only">Footer</h2>
-  <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-    <div class="flex flex-col justify-between gap-12 sm:gap-16 lg:flex-row">
-      <div class="flex max-w-sm flex-col items-start gap-6 sm:gap-8">
-        <img class="h-8 w-auto" width="65" height="40" src="/assets/logo.svg" alt="Stone" />
-        <p class="text-base text-primary-950/70 dark:text-primary-200/70">
-          Stone is a premium Astro theme specially designed for Business, Marketing, SaaS and
-          Startup websites.
-        </p>
-        <p class="text-sm text-primary-950/70 dark:text-primary-200/70">© 2023 Stone</p>
-      </div>
+export const Footer = () => (
+  <footer
+    className="mt-16 bg-primary-500/10 py-16 dark:bg-primary-400/10 lg:mt-20 lg:py-20"
+    aria-labelledby="footer-heading"
+  >
+    <h2 id="footer-heading" className="sr-only">
+      Footer
+    </h2>
+    <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div className="flex flex-col justify-between gap-12 sm:gap-16 lg:flex-row">
+        <div className="flex max-w-sm flex-col items-start gap-6 sm:gap-8">
+          <img className="h-8 w-auto" width="65" height="40" src="/assets/logo.svg" alt="Stone" />
+          <p className="text-base text-primary-950/70 dark:text-primary-200/70">
+            Stone is a premium Astro theme specially designed for Business, Marketing, SaaS and
+            Startup websites.
+          </p>
+          <p className="text-sm text-primary-950/70 dark:text-primary-200/70">© 2023 Stone</p>
+        </div>
 
-      <!-- Bottom links -->
-      <div class="grid max-w-xl flex-1 grid-cols-1 gap-8 sm:grid-cols-3">
-        {
-          bottomLinks.map((group) => (
-            <div class="flex flex-col gap-4">
-              <p class="text-base font-medium">{group.header}</p>
-              <ul role="list" class="flex flex-col gap-3">
+        <div className="grid max-w-xl flex-1 grid-cols-1 gap-8 sm:grid-cols-3">
+          {bottomLinks.map((group) => (
+            <div className="flex flex-col gap-4">
+              <p className="text-base font-medium">{group.header}</p>
+              <ul role="list" className="flex flex-col gap-3">
                 {group.links.map((link) => (
                   <li>
                     <a
                       href={link.href}
-                      class="inline-flex items-center gap-1 rounded-md text-base hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-950 dark:focus-visible:outline-primary-200"
+                      className="inline-flex items-center gap-1 rounded-md text-base hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-950 dark:focus-visible:outline-primary-200"
                       target={link.isExternal ? '_blank' : undefined}
                       rel={link.isExternal ? 'noopener' : undefined}
                     >
                       {link.name}
                       {link.isExternal && (
                         <svg
-                          class="h-4 w-4"
+                          className="h-4 w-4"
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 24 24"
                           fill="currentColor"
@@ -116,9 +115,9 @@ const bottomLinks = [
                 ))}
               </ul>
             </div>
-          ))
-        }
+          ))}
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
+);

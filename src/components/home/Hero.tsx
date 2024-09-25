@@ -1,6 +1,6 @@
 export const Hero = () => {
   return (
-    <section className="py-16 sm:py-20">
+    <section className="py-8 sm:py-12">
       <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="flex flex-col gap-16">
           <div className="flex flex-col items-start gap-8 sm:gap-10">
