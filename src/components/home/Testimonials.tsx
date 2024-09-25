@@ -1,4 +1,3 @@
----
 const testimonials = [
   {
     name: 'Rebecca Hayes',
@@ -22,24 +21,21 @@ const testimonials = [
       '“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”',
   },
 ];
----
 
-<section class="py-16 sm:py-20">
-  <div class="v mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-    <div class="flex flex-col items-center gap-12 lg:gap-20">
-      <h2 class="mx-auto max-w-xl text-center text-3xl font-medium tracking-tight sm:text-4xl">
-        Trusted by the largest companies in the world
-      </h2>
-      <div
-        class="divide-primary-900/10 dark:divide-primary-300/10 grid divide-y lg:grid-cols-3 lg:divide-x lg:divide-y-0"
-      >
-        {
-          testimonials.map((testimonial) => (
-            <figure class="mx-auto flex max-w-lg flex-col items-center gap-6 py-8 lg:px-8 lg:py-0">
-              <div class="flex flex-row gap-2">
+export const Testimonials = () => (
+  <section className="py-16 sm:py-20">
+    <div className="v mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div className="flex flex-col items-center gap-12 lg:gap-20">
+        <h2 className="mx-auto max-w-xl text-center text-3xl font-medium tracking-tight sm:text-4xl">
+          Trusted by the largest companies in the world
+        </h2>
+        <div className="grid divide-y divide-primary-900/10 dark:divide-primary-300/10 lg:grid-cols-3 lg:divide-x lg:divide-y-0">
+          {testimonials.map((testimonial) => (
+            <figure className="mx-auto flex max-w-lg flex-col items-center gap-6 py-8 lg:px-8 lg:py-0">
+              <div className="flex flex-row gap-2">
                 {[...Array(3)].map(() => (
                   <svg
-                    class="text-primary-600 dark:text-primary-400 h-6 w-6"
+                    className="h-6 w-6 text-primary-600 dark:text-primary-400"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
@@ -49,22 +45,22 @@ const testimonials = [
                   </svg>
                 ))}
               </div>
-              <blockquote class="text-primary-950/70 dark:text-primary-200/70 text-center text-lg italic leading-loose">
+              <blockquote className="text-center text-lg italic leading-loose text-primary-950/70 dark:text-primary-200/70">
                 <p>{testimonial.message}</p>
               </blockquote>
-              <figcaption class="flex flex-col gap-4">
-                <img class="mx-auto h-8 w-8 rounded-full" src={testimonial.image} alt="" />
-                <div class="text-center">
-                  <div class="text-base font-medium">{testimonial.name}</div>
-                  <div class="text-primary-950/70 dark:text-primary-200/70 text-sm">
+              <figcaption className="flex flex-col gap-4">
+                <img className="mx-auto h-8 w-8 rounded-full" src={testimonial.image} alt="" />
+                <div className="text-center">
+                  <div className="text-base font-medium">{testimonial.name}</div>
+                  <div className="text-sm text-primary-950/70 dark:text-primary-200/70">
                     {testimonial.description}
                   </div>
                 </div>
               </figcaption>
             </figure>
-          ))
-        }
+          ))}
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+);
