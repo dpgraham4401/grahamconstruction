@@ -1,9 +1,10 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="All Playwright" type="JavaScriptTestRunnerPlaywright">
+  <configuration default="false" name="Playwright FireFox" type="JavaScriptTestRunnerPlaywright">
     <config value="$PROJECT_DIR$/playwright.config.ts" />
     <node-interpreter value="$USER_HOME$/.nvm/versions/node/v20.17.0/bin/node" />
     <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
     <working-dir value="$PROJECT_DIR$" />
+    <cli-options value="--project=firefox" />
     <envs />
     <scope-kind value="ALL" />
     <method v="2" />
