@@ -26,6 +26,8 @@
   },
   "devDependencies": {
     "@astrojs/ts-plugin": "^1.10.2",
-    "@types/alpinejs__collapse": "^3.13.4"
+    "@playwright/test": "^1.47.2",
+    "@types/alpinejs__collapse": "^3.13.4",
+    "@types/node": "^22.7.0"
   }
 }

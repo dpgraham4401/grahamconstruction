@@ -7,4 +7,7 @@ import compress from 'astro-compress';
 export default defineConfig({
   integrations: [tailwind(), compress()],
   site: 'https://dev.grahamconstructionco.com',
+  server: {
+    port: 3000,
+  }
 });
