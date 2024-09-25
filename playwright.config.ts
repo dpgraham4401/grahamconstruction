@@ -12,7 +12,7 @@ import { defineConfig, devices } from '@playwright/test';
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  testDir: './tests',
+  testDir: './e2e-tests',
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
@@ -44,11 +44,11 @@ export default defineConfig({
       use: { ...devices['Desktop Safari'] },
     },
   ],
-   // Run your local dev server before starting the tests
-   webServer: {
-     command: 'npm run start',
-     url: 'http://localhost:3000',
-     timeout: 120000,
-     reuseExistingServer: !process.env.CI,
-   },
+  // Run your local dev server before starting the tests
+  webServer: {
+    command: 'npm run start',
+    url: 'http://localhost:3000',
+    timeout: 120000,
+    reuseExistingServer: !process.env.CI,
+  },
 });
