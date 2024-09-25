@@ -1,8 +1,8 @@
 ---
 import { About } from 'src/components/home/About';
 import Cta from '@components/home/Cta.astro';
-import Expertise from '@components/home/Expertise.astro';
 import { Hero } from '@components/home/Hero';
+import { Expertise } from 'src/components/home/Expertise';
 import Services from '@components/home/Services.astro';
 import Testimonials from '@components/home/Testimonials.astro';
 import Layout from '@layouts/Layout.astro';
@@ -14,7 +14,7 @@ import Layout from '@layouts/Layout.astro';
 >
   <Hero />
   <Services />
-  <Expertise />
+  <Expertise client:load />
   <About />
   <Testimonials />
   <Cta />
