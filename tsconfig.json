@@ -1,6 +1,7 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
+    "types": ["@testing-library/jest-dom"],
     "plugins": [
       {
         "name": "@astrojs/ts-plugin"
