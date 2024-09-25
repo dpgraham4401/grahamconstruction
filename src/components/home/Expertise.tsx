@@ -4,14 +4,12 @@ const features = [
   {
     id: 'expertise-1',
     name: 'Digital Experience Platforms',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+    description: 'first description',
   },
   {
     id: 'expertise-2',
     name: 'Web & Mobile Development',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+    description: 'second description',
   },
   {
     id: 'expertise-3',
@@ -43,7 +41,6 @@ export const Expertise = () => {
   const [selected, setSelected] = useState<number | null>(null);
 
   const toggle = (index: number) => {
-    console.log('toggle', index);
     setSelected(selected === index ? null : index);
   };
 
