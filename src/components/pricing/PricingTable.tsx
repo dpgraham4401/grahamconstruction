@@ -1,4 +1,3 @@
----
 const pricing = [
   {
     name: 'Basic',
@@ -33,34 +32,32 @@ const pricing = [
     ],
   },
 ];
----
 
-<section class="py-16 sm:py-20">
-  <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-    <div class="-mt-8 grid gap-8 lg:mt-0 lg:grid-cols-3">
-      {
-        pricing.map((item) => (
+export const PricingTable = () => (
+  <section className="py-16 sm:py-20">
+    <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div className="-mt-8 grid gap-8 lg:mt-0 lg:grid-cols-3">
+        {pricing.map((item) => (
           <div
-            class:list={[
-              'relative flex flex-col gap-8 rounded-3xl p-8',
-              item.isFlagged && 'bg-primary-500/10 dark:bg-primary-400/10',
-            ]}
+            className={`relative flex flex-col gap-8 rounded-3xl p-8 ${item.isFlagged && 'bg-primary-500/10 dark:bg-primary-400/10'}`}
           >
-            <div class="flex-1">
-              <h2 class="text-xl font-medium">{item.name}</h2>
-              <p class="mt-4 flex items-baseline">
-                <span class="text-4xl font-medium tracking-tight">{item.price}</span>
-                <span class="text-primary-950/70 dark:text-primary-200/70 ml-1 text-sm font-medium">
+            <div className="flex-1">
+              <h2 className="text-xl font-medium">{item.name}</h2>
+              <p className="mt-4 flex items-baseline">
+                <span className="text-4xl font-medium tracking-tight">{item.price}</span>
+                <span className="ml-1 text-sm font-medium text-primary-950/70 dark:text-primary-200/70">
                   {item.periodicity}
                 </span>
               </p>
-              <p class="text-primary-950/70 dark:text-primary-200/70 mt-6">{item.description}</p>
+              <p className="mt-6 text-primary-950/70 dark:text-primary-200/70">
+                {item.description}
+              </p>
 
-              <ul role="list" class="mt-6 space-y-6">
+              <ul role="list" className="mt-6 space-y-6">
                 {item.features.map((feature) => (
-                  <li class="flex gap-3">
+                  <li className="flex gap-3">
                     <svg
-                      class="text-primary-600 dark:text-primary-400 h-6 w-6 flex-shrink-0"
+                      className="h-6 w-6 flex-shrink-0 text-primary-600 dark:text-primary-400"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       fill="currentColor"
@@ -75,13 +72,13 @@ const pricing = [
             </div>
             <a
               href="#"
-              class="bg-primary-600 dark:bg-primary-400 hover:bg-primary-700 dark:hover:bg-primary-300 focus-visible:outline-primary-600 dark:focus-visible:outline-primary-400 dark:text-primary-950 inline-flex w-full items-center justify-center rounded-full border border-transparent px-5 py-3 text-base font-medium text-white transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+              className="inline-flex w-full items-center justify-center rounded-full border border-transparent bg-primary-600 px-5 py-3 text-base font-medium text-white transition hover:bg-primary-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 dark:bg-primary-400 dark:text-primary-950 dark:hover:bg-primary-300 dark:focus-visible:outline-primary-400"
             >
               Buy now
             </a>
           </div>
-        ))
-      }
+        ))}
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+);

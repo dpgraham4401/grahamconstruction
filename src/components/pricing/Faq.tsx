@@ -1,4 +1,3 @@
----
 const questions = [
   {
     id: 'faq-1',
@@ -37,45 +36,46 @@ const questions = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, voluptas ipsa quia excepturi, quibusdam natus exercitationem sapiente tempore labore voluptatem.',
   },
 ];
----
 
-<section class="py-16 sm:py-20">
-  <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-    <div class="grid gap-12 lg:grid-cols-3 lg:gap-8">
-      <div>
-        <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Frequently asked questions</h2>
-      </div>
-      <div class="lg:col-span-2">
-        <dl
-          class="-mt-3"
-          x-data="{ selected: null, toggle(value) { this.selected = this.selected === value ? null : value } }"
-        >
-          {
-            questions.map((question, index) => (
+export const Faq = () => (
+  <section className="py-16 sm:py-20">
+    <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div className="grid gap-12 lg:grid-cols-3 lg:gap-8">
+        <div>
+          <h2 className="text-3xl font-medium tracking-tight sm:text-4xl">
+            Frequently asked questions
+          </h2>
+        </div>
+        <div className="lg:col-span-2">
+          <dl
+            className="-mt-3"
+            x-data="{ selected: null, toggle(value) { this.selected = this.selected === value ? null : value } }"
+          >
+            {questions.map((question, index) => (
               <div
-                class="rounded-3xl px-4 transition"
+                className="rounded-3xl px-4 transition"
                 x-data={`{ id: ${index}, get isOpen() { return this.id === this.selected }, get isNextOpen() { return (this.id + 1) === this.selected } }`}
-                x-bind:class="{ 'bg-primary-500/10 dark:bg-primary-400/10': isOpen }"
+                x-bind:className="{ 'bg-primary-500/10 dark:bg-primary-400/10': isOpen }"
               >
                 <dt
-                  class="border-b text-lg transition"
+                  className="border-b text-lg transition"
                   x-cloak
-                  x-bind:class="{ 'border-transparent': isOpen || isNextOpen, 'border-primary-900/10 dark:border-primary-300/10': !(isOpen || isNextOpen) }"
+                  x-bind:className="{ 'border-transparent': isOpen || isNextOpen, 'border-primary-900/10 dark:border-primary-300/10': !(isOpen || isNextOpen) }"
                 >
                   <button
                     type="button"
-                    class="group block w-full py-6 text-left transition focus-visible:outline-none"
+                    className="group block w-full py-6 text-left transition focus-visible:outline-none"
                     aria-controls={question.id}
                     x-on:click="toggle(id)"
                     aria-expanded="false"
                     x-bind:aria-expanded="isOpen.toString()"
                   >
-                    <div class="group-focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200 flex items-center justify-between rounded-3xl group-focus-visible:outline group-focus-visible:outline-2 group-focus-visible:outline-offset-2">
-                      <span class="font-medium">{question.title}</span>
-                      <span class="ml-6 flex h-7 items-center">
+                    <div className="flex items-center justify-between rounded-3xl group-focus-visible:outline group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200">
+                      <span className="font-medium">{question.title}</span>
+                      <span className="ml-6 flex h-7 items-center">
                         <svg
-                          class="text-primary-600 dark:text-primary-400 h-6 w-6 rotate-0 transform transition duration-200 ease-in-out"
-                          x-bind:class="{ '-rotate-180': isOpen, 'rotate-0': !isOpen }"
+                          className="h-6 w-6 rotate-0 transform text-primary-600 transition duration-200 ease-in-out dark:text-primary-400"
+                          x-bind:className="{ '-rotate-180': isOpen, 'rotate-0': !isOpen }"
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 24 24"
                           fill="currentColor"
@@ -87,16 +87,16 @@ const questions = [
                     </div>
                   </button>
                 </dt>
-                <dd class="pb-6 pr-6" id={question.id} x-show="isOpen" x-cloak x-collapse>
-                  <p class="text-primary-950/70 dark:text-primary-200/70 text-base">
+                <dd className="pb-6 pr-6" id={question.id} x-show="isOpen" x-cloak x-collapse>
+                  <p className="text-base text-primary-950/70 dark:text-primary-200/70">
                     {question.answer}
                   </p>
                 </dd>
               </div>
-            ))
-          }
-        </dl>
+            ))}
+          </dl>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+);
