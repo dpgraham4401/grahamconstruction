@@ -9,7 +9,7 @@ module.exports = {
     colors: {
       current: 'currentColor',
       transparent: 'transparent',
-      white: '#ffffff',
+      white: colors.white,
       primary: colors.stone,
       secondary: colors.yellow,
     },
@@ -28,5 +28,14 @@ module.exports = {
       '5xl': ['3rem', '3.5rem'],
       '6xl': ['3.75rem', '4.25rem'],
     },
+    extend: {
+      borderRadius: {
+        lg: 'var(--radius)',
+        md: 'calc(var(--radius) - 2px)',
+        sm: 'calc(var(--radius) - 4px)',
+      },
+      colors: {},
+    },
   },
+  plugins: [require('tailwindcss-animate')],
 };
