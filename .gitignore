@@ -25,6 +25,7 @@ pnpm-debug.log*
 
 # .idea folder
 .idea
+.run
 /test-results/
 /playwright-report/
 /blob-report/

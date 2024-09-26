@@ -14,8 +14,8 @@ const links = [
   },
   {
     ref: '03',
-    name: 'Services',
-    href: '/services',
+    name: 'Portfolio',
+    href: '/portfolio',
   },
   {
     ref: '04',

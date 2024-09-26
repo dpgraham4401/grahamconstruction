@@ -1,4 +1,5 @@
-import { PicCarousel } from './PicCarousel';
+import { ContactUsBtn } from '@/components/ContactUsBtn/ContactUsBtn';
+import { HomeCarousel } from '@/components/home/HomeCarousel';
 
 export const Hero = () => {
   return (
@@ -11,20 +12,16 @@ export const Hero = () => {
                 Bring your dream home to life
               </h1>
               <p className="text-lg text-primary-950/70 dark:text-primary-200/70 sm:text-xl">
-                Remodeling your home should be fun, not stressful.
+                Remodeling your home should be fun, not stressful. We have the expertise to guide
+                you through the entire process.
               </p>
             </div>
-            <a
-              href="/services"
-              className="inline-flex items-center justify-center rounded-full border border-transparent bg-primary-600 px-5 py-3 text-base font-medium text-white transition hover:bg-primary-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 dark:bg-primary-400 dark:text-primary-950 dark:hover:bg-primary-300 dark:focus-visible:outline-primary-400"
-            >
-              Get started
-            </a>
+            <ContactUsBtn>Get started today</ContactUsBtn>
           </div>
         </div>
       </div>
       <div className="flex justify-center">
-        <PicCarousel />
+        <HomeCarousel />
       </div>
     </section>
   );

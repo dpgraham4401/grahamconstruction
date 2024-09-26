@@ -1,8 +1,13 @@
 import { render, screen } from '@testing-library/react';
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import { Hero } from './Hero';
 
 describe('Hero component', () => {
+  vi.mock('@/components/home/HomeCarousel', async (importOriginal) => ({
+    ...(await importOriginal<typeof import('@/components/home/HomeCarousel')>()),
+    HomeCarousel: () => <div>HomeCarousel</div>,
+  }));
+
   it('renders the main heading', () => {
     render(<Hero />);
     const heading = screen.getByRole('heading', {
@@ -15,13 +20,5 @@ describe('Hero component', () => {
     render(<Hero />);
     const link = screen.getByRole('link', { name: /Get started/i });
     expect(link).toBeInTheDocument();
-    expect(link).toHaveAttribute('href', '/services');
-  });
-
-  it('renders the hero image with correct attributes', () => {
-    render(<Hero />);
-    const image = screen.getByAltText('Hero picture');
-    expect(image).toBeInTheDocument();
-    expect(image).toHaveAttribute('src', '/assets/hero.webp');
   });
 });

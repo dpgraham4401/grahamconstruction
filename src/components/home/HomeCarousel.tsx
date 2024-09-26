@@ -8,7 +8,7 @@ import {
 import Autoplay from 'embla-carousel-autoplay';
 import { useRef } from 'react';
 
-export const PicCarousel = () => {
+export const HomeCarousel = () => {
   const plugin = useRef(Autoplay({ delay: 4000, stopOnMouseEnter: true, playOnInit: true }));
 
   return (

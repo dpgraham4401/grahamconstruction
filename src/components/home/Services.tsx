@@ -3,27 +3,29 @@ const services = [
     step: '01',
     name: 'Design',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      "With 30+ years of experience, we can help you design your dream home. We'll work with you to create a plan that fits your needs.",
   },
   {
     step: '02',
     name: 'Build',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      "Make a new addition to your home or build from the ground up. We'll guide you from concept, to permits, to completion.",
   },
   {
     step: '03',
-    name: 'Refresh',
+    name: 'Remodel',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Modify your existing home to give a fresh look or fit your needs. We can help you with the entire process.',
   },
 ];
 
 export const Services = () => (
-  <section className="py-16 sm:py-20">
+  <section className="my-16 sm:my-20">
     <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
       <div className="flex flex-col gap-12 sm:gap-16">
-        <h2 className="text-3xl font-medium tracking-tight sm:text-4xl">Services</h2>
+        <h2 className="text-3xl font-medium tracking-tight sm:text-4xl">
+          You have the vision, we have a way to get you there
+        </h2>
         <div className="grid gap-8 lg:grid-cols-3">
           {services.map((service) => (
             <div
@@ -40,6 +42,7 @@ export const Services = () => (
             </div>
           ))}
         </div>
+        <div></div>
       </div>
     </div>
   </section>

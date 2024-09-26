@@ -1,5 +1,6 @@
 ---
-import { Expertise, Hero, Cta, About, Services, Testimonials } from '@/components/home';
+import { Hero, Services } from '@/components/home';
+import { Cta } from '@/components/Cta/Cta';
 import Layout from '@/layouts/Layout.astro';
 ---
 
@@ -9,8 +10,8 @@ import Layout from '@/layouts/Layout.astro';
 >
   <Hero client:load />
   <Services />
-  <Expertise client:load />
-  <About />
-  <Testimonials />
-  <Cta />
+  <Cta
+    title="Let's nail this project together!"
+    description="Graham construction is a Dallas local, general contractor that specializes in residential remodeling. Let us help you bring your dream home to life."
+  />
 </Layout>

@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { userEvent } from '@testing-library/user-event';
+import { Expertise } from 'src/components/about/Expertise.tsx';
 import { describe, expect, it } from 'vitest';
-import { Expertise } from './Expertise';
 
 describe('Expertise Component', () => {
   it('renders all expertise items', () => {

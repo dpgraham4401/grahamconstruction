@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui/Button.tsx';
 
 import { cn } from '@/lib/utils';
 import useEmblaCarousel, { type UseEmblaCarouselType } from 'embla-carousel-react';

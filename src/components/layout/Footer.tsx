@@ -29,7 +29,7 @@ const bottomLinks = [
       },
       {
         name: 'Services',
-        href: '/services',
+        href: '/portfolio',
         isExternal: false,
       },
     ],
