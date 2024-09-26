@@ -4,7 +4,7 @@ export const Heading = () => (
       <div className="flex flex-col gap-4 sm:gap-6">
         <h1 className="text-4xl font-medium tracking-tight sm:text-5xl lg:text-6xl">About</h1>
         <p className="mx-auto max-w-xl text-lg text-primary-950/70 dark:text-primary-200/70 sm:text-xl">
-          We build products for developers and designers.
+          We turn houses into homes.
         </p>
       </div>
     </div>

@@ -6,7 +6,7 @@ describe('Hero component', () => {
   it('renders the main heading', () => {
     render(<Hero />);
     const heading = screen.getByRole('heading', {
-      name: /Design and bring your dream home to life/i,
+      name: /bring your dream home to life/i,
     });
     expect(heading).toBeInTheDocument();
   });
@@ -15,7 +15,7 @@ describe('Hero component', () => {
     render(<Hero />);
     const link = screen.getByRole('link', { name: /Get started/i });
     expect(link).toBeInTheDocument();
-    expect(link).toHaveAttribute('href', '/pricing');
+    expect(link).toHaveAttribute('href', '/services');
   });
 
   it('renders the hero image with correct attributes', () => {

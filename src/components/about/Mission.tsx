@@ -1,19 +1,13 @@
+const years =
+  new Date(new Date().valueOf() - new Date('1985/01/01').valueOf()).getFullYear() - 1970;
 const stats = [
   {
     name: 'Years',
-    value: '9',
-  },
-  {
-    name: 'Experts',
-    value: '15',
+    value: years.toString(),
   },
   {
     name: 'Projects',
-    value: '122',
-  },
-  {
-    name: 'Awards',
-    value: "'9'",
+    value: '122+',
   },
 ];
 
@@ -34,23 +28,20 @@ export const Mission = () => (
             <h2 className="text-3xl font-medium tracking-tight sm:text-4xl">Our mission</h2>
             <div className="space-y-6">
               <p className="text-base text-primary-950/70 dark:text-primary-200/70 sm:text-lg">
-                Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed
-                consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi.
-                Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames
-                senectus vitae.
+                Our mission is simple:{' '}
+                <em className="font-semibold">
+                  make the process of building your dream home as easy and stress-free as possible
+                </em>
+                .
               </p>
               <p className="text-base text-primary-950/70 dark:text-primary-200/70 sm:text-lg">
-                Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem
-                nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet
-                quam urna. Sollicitudin tristique eros erat odio sed vitae, consequat turpis
-                elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut
-                volutpat donec laoreet quam urna.
+                Remodeling your home can seem daunting; between the designing, planning, budgeting,
+                and construction, it's easy to get overwhelmed. That's where we come in. We'll work
+                with you every step of the way to ensure your vision comes to life.
               </p>
               <p className="text-base text-primary-950/70 dark:text-primary-200/70 sm:text-lg">
-                Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies.
-                Vulputate aliquet velit faucibus semper. Pellentesque in venenatis vestibulum
-                consectetur nibh id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim
-                fermentum lacus in. Viverra.
+                Whether you're looking to remodel a bathroom, or add an entire second story to your
+                home, we've got you covered.
               </p>
             </div>
           </div>
@@ -58,7 +49,10 @@ export const Mission = () => (
           {/*Stats */}
           <dl className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             {stats.map((stat) => (
-              <div className="rounded-3xl border border-primary-900/10 p-6 dark:border-primary-300/10">
+              <div
+                key={stat.name}
+                className="rounded-3xl border border-primary-900/10 p-6 dark:border-primary-300/10"
+              >
                 <dt className="text-base">{stat.name}</dt>
                 <dd className="text-3xl font-medium tracking-tight">{stat.value}</dd>
               </div>
