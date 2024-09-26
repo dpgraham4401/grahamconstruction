@@ -1,6 +1,8 @@
+import { PicCarousel } from './PicCarousel';
+
 export const Hero = () => {
   return (
-    <section className="py-8 sm:py-12">
+    <section className="justify-center py-8 sm:pt-12">
       <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="flex flex-col gap-16">
           <div className="flex flex-col items-start gap-8 sm:gap-10">
@@ -19,14 +21,10 @@ export const Hero = () => {
               Get started
             </a>
           </div>
-          <img
-            className="h-auto w-full rounded-3xl"
-            width="1280"
-            height="640"
-            src="/assets/hero.webp"
-            alt="Hero picture"
-          />
         </div>
+      </div>
+      <div className="flex justify-center">
+        <PicCarousel />
       </div>
     </section>
   );
