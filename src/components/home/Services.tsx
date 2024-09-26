@@ -26,7 +26,10 @@ export const Services = () => (
         <h2 className="text-3xl font-medium tracking-tight sm:text-4xl">Services</h2>
         <div className="grid gap-8 lg:grid-cols-3">
           {services.map((service) => (
-            <div className="flex flex-col gap-12 rounded-3xl bg-primary-500/10 px-6 py-8 dark:bg-primary-400/10">
+            <div
+              key={service.name}
+              className="flex flex-col gap-12 rounded-3xl bg-primary-500/10 px-6 py-8 dark:bg-primary-400/10"
+            >
               <p className="text-sm">{service.step}</p>
               <div className="flex flex-col gap-4">
                 <h3 className="text-xl font-medium">{service.name}</h3>

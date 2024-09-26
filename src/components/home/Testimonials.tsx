@@ -31,10 +31,14 @@ export const Testimonials = () => (
         </h2>
         <div className="grid divide-y divide-primary-900/10 dark:divide-primary-300/10 lg:grid-cols-3 lg:divide-x lg:divide-y-0">
           {testimonials.map((testimonial) => (
-            <figure className="mx-auto flex max-w-lg flex-col items-center gap-6 py-8 lg:px-8 lg:py-0">
+            <figure
+              key={testimonial.name}
+              className="mx-auto flex max-w-lg flex-col items-center gap-6 py-8 lg:px-8 lg:py-0"
+            >
               <div className="flex flex-row gap-2">
-                {[...Array(3)].map(() => (
+                {[...Array(3)].map((_value, index) => (
                   <svg
+                    key={index}
                     className="h-6 w-6 text-primary-600 dark:text-primary-400"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"

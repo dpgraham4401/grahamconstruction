@@ -1,30 +1,5 @@
 const bottomLinks = [
   {
-    header: 'Social',
-    links: [
-      {
-        name: 'Github',
-        href: 'https://github.com/',
-        isExternal: true,
-      },
-      {
-        name: 'Twitter',
-        href: 'https://twitter.com/',
-        isExternal: true,
-      },
-      {
-        name: 'Instagram',
-        href: 'https://instagram.com/',
-        isExternal: true,
-      },
-      {
-        name: 'Facebook',
-        href: 'https://facebook.com/',
-        isExternal: true,
-      },
-    ],
-  },
-  {
     header: 'Company',
     links: [
       {
@@ -38,11 +13,6 @@ const bottomLinks = [
         isExternal: false,
       },
       {
-        name: 'Pricing',
-        href: '/pricing',
-        isExternal: false,
-      },
-      {
         name: 'Contact',
         href: '/contact',
         isExternal: false,
@@ -50,16 +20,16 @@ const bottomLinks = [
     ],
   },
   {
-    header: 'Legal',
+    header: 'Resources',
     links: [
       {
-        name: 'Privacy',
-        href: '/privacy',
+        name: 'Portfolio',
+        href: '/portfolio',
         isExternal: false,
       },
       {
-        name: 'Styleguide',
-        href: '/styleguide',
+        name: 'Services',
+        href: '/services',
         isExternal: false,
       },
     ],
@@ -77,12 +47,20 @@ export const Footer = () => (
     <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
       <div className="flex flex-col justify-between gap-12 sm:gap-16 lg:flex-row">
         <div className="flex max-w-sm flex-col items-start gap-6 sm:gap-8">
-          <img className="h-8 w-auto" width="65" height="40" src="/assets/logo.svg" alt="Stone" />
+          <img
+            className="h-8 w-auto"
+            width="65"
+            height="40"
+            src="/assets/logo.svg"
+            alt="Graham Construction Logo"
+          />
           <p className="text-base text-primary-950/70 dark:text-primary-200/70">
-            Stone is a premium Astro theme specially designed for Business, Marketing, SaaS and
-            Startup websites.
+            Graham Construction is a bespoke residential construction company based out of Dallas,
+            Tx, specializing in custom homes and remodels.
           </p>
-          <p className="text-sm text-primary-950/70 dark:text-primary-200/70">© 2023 Stone</p>
+          <p className="text-sm text-primary-950/70 dark:text-primary-200/70">
+            © 2024 Graham Construction
+          </p>
         </div>
 
         <div className="grid max-w-xl flex-1 grid-cols-1 gap-8 sm:grid-cols-3">

@@ -1,11 +1,5 @@
 const questions = [
   {
-    id: 'faq-1',
-    title: 'How do I know which pricing plan is right for me?',
-    answer:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, voluptas ipsa quia excepturi, quibusdam natus exercitationem sapiente tempore labore voluptatem.',
-  },
-  {
     id: 'faq-2',
     title: 'How can I upgrade, downgrade, or cancel my plan?',
     answer:

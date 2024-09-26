@@ -11,6 +11,7 @@ module.exports = {
       transparent: 'transparent',
       white: '#ffffff',
       primary: colors.stone,
+      secondary: colors.yellow,
     },
     fontFamily: {
       sans: ['Inter', 'sans-serif'],

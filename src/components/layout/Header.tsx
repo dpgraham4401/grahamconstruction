@@ -1,5 +1,5 @@
 import { ThemeToggle } from '@components/layout/ThemeToggle.tsx';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const links = [
   {
@@ -14,8 +14,8 @@ const links = [
   },
   {
     ref: '03',
-    name: 'Pricing',
-    href: '/pricing',
+    name: 'Services',
+    href: '/services',
   },
   {
     ref: '04',
@@ -29,7 +29,7 @@ export const Header = () => {
 
   return (
     <header
-      className={`transition ${open ? 'bg-primary-500/10 dark:bg-primary-400/10' : 'bg-primary-50 dark:bg-primary-950'}`}
+      className={`transition ${open ? 'bg-secondary-500/10 dark:bg-primary-400/10' : 'bg-primary-50 dark:bg-primary-950'}`}
     >
       <div className="mx-auto flex max-w-2xl items-center justify-between px-4 py-4 sm:px-6 sm:py-6 lg:max-w-7xl lg:px-8">
         <a
@@ -58,7 +58,6 @@ export const Header = () => {
             <span className="sr-only">Toggle menu</span>
             {open ? (
               <svg
-                x-cloak
                 className="h-8 w-8"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -69,7 +68,6 @@ export const Header = () => {
               </svg>
             ) : (
               <svg
-                x-cloak
                 className="h-8 w-8"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -85,24 +83,25 @@ export const Header = () => {
       <div
         id="menu"
         aria-labelledby="menubutton"
-        className={`mx-auto max-w-2xl overflow-hidden px-4 transition-all duration-500 ease-in-out sm:px-6 lg:max-w-7xl lg:px-8 ${open ? 'h-96 opacity-100' : 'invisible h-0 opacity-0'}`}
+        className={`mx-auto max-w-2xl overflow-hidden px-4 transition-all duration-500 ease-in-out sm:px-6 lg:max-w-7xl lg:px-8 ${open ? 'h-52 opacity-100 sm:h-96' : 'invisible h-0 opacity-0'}`}
       >
-        <div className="grid grid-cols-1 gap-16 pb-24 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-16 pb-0 sm:pb-24 lg:grid-cols-2">
           <div className="hidden items-center justify-center rounded-3xl bg-primary-500/10 px-6 py-8 dark:bg-primary-400/10 lg:flex">
             <p className="max-w-sm text-xl italic leading-loose text-primary-950/70 dark:text-primary-200/70">
-              <span className="font-medium">Graham Construction</span> is a premium Astro theme
-              specially designed for Business, Marketing, SaaS and Startup websites.
+              <span className="font-medium">Graham Construction</span>is a bespoke residential
+              construction company based out of Dallas, Tx, specializing in custom homes and
+              remodels.
             </p>
           </div>
           <nav
             role="navigation"
-            className="flex flex-col gap-1 divide-y divide-primary-900/10 dark:divide-primary-300/10"
+            className="flex flex-col gap-4 divide-y divide-primary-900/10 dark:divide-primary-300/10"
           >
             {links.map((link) => (
               <a
                 key={link.ref}
                 href={link.href}
-                className="trackung-tight group inline-flex text-2xl font-medium text-primary-950 transition focus-visible:outline-none dark:text-primary-200 sm:py-4 sm:text-4xl"
+                className="group inline-flex text-2xl font-medium tracking-tight text-primary-950 transition focus-visible:outline-none dark:text-primary-200 sm:py-4 sm:text-4xl"
               >
                 <div className="flex flex-1 items-center justify-between rounded-3xl group-focus-visible:outline group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200">
                   <div className="flex items-center gap-1">
@@ -127,5 +126,3 @@ export const Header = () => {
     </header>
   );
 };
-
-export default Header;
