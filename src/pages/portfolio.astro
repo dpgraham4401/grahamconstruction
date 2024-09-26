@@ -1,14 +1,16 @@
 ---
 import Layout from '@/layouts/Layout.astro';
-import { Heading, PricingTable, Faq, Cta } from 'src/components/services';
+import { PortfolioHeading } from 'src/components/portfolio';
+import { Cta } from 'src/components/Cta/Cta';
 ---
 
 <Layout
-  description="Get a quote for your next project. We offer honest pricing for professional work."
-  title="Get Started · Graham Construction"
+  description="A gallery of photos from recent Dallas, TX residential construction and remodeling projects by Graham Constructions."
+  title="Portfolio · Graham Construction"
 >
-  <Heading />
-  <PricingTable />
-  <Faq />
-  <Cta />
+  <PortfolioHeading />
+  <Cta
+    title="Still not convinced?"
+    description="Please describe your case to receive the most accurate advice."
+  />
 </Layout>
