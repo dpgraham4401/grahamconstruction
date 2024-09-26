@@ -1,4 +1,4 @@
-import { ThemeToggle } from '@components/layout/ThemeToggle.tsx';
+import { ThemeToggle } from '@/components/layout/ThemeToggle.tsx';
 import { useState } from 'react';
 
 const links = [

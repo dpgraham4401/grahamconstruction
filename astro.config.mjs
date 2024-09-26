@@ -7,9 +7,15 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), compress(), react()],
+  integrations: [
+    tailwind({
+      applyBaseStyles: false,
+    }),
+    compress(),
+    react(),
+  ],
   site: 'https://dev.grahamconstructionco.com',
   server: {
     port: 3000,
-  }
+  },
 });
