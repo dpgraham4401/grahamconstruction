@@ -7,6 +7,39 @@ import {
 } from '@/components/ui/Carousel';
 import Autoplay from 'embla-carousel-autoplay';
 import { useRef } from 'react';
+import libraryImage from '../../../public/assets/graham_co_photos/GR3_1244_HDR_WEB.jpg?url';
+import garageImage from '../../../public/assets/graham_co_photos/GR3_1487_HDR_WEB.jpg?url';
+import apartmentBedreoomImage from '../../../public/assets/graham_co_photos/GR3_1639_HDR_WEB.jpg?url';
+import kitchenDenImage from '../../../public/assets/graham_co_photos/GR3_6152_HDR_WEB.jpg?url';
+import billiardsImage from '../../../public/assets/graham_co_photos/GR3_6197_HDR_WEB.jpg?url';
+
+interface HeroImage {
+  src: string;
+  alt: string;
+}
+
+const carouselItems: HeroImage[] = [
+  {
+    src: libraryImage,
+    alt: 'A cozy library with dark stained wooden shelves',
+  },
+  {
+    src: garageImage,
+    alt: 'An over-sized, standalone garage at night with light streaming out of the open doors',
+  },
+  {
+    src: kitchenDenImage,
+    alt: 'a traditionally styled kitchen with a large island and a cozy den',
+  },
+  {
+    src: apartmentBedreoomImage,
+    alt: 'a long bedroom with a fireplace, sliding door closets, and a private bathroom',
+  },
+  {
+    src: billiardsImage,
+    alt: 'a billiards room with a pool table, bar, and arcade games',
+  },
+];
 
 export const HomeCarousel = () => {
   const plugin = useRef(Autoplay({ delay: 4000, stopOnMouseEnter: true, playOnInit: true }));
@@ -19,15 +52,15 @@ export const HomeCarousel = () => {
       onMouseLeave={plugin.current.reset}
     >
       <CarouselContent>
-        {Array.from({ length: 5 }).map((_, index) => (
+        {carouselItems.map((item, index) => (
           <CarouselItem key={index} className="">
             <div className="p-1">
               <img
                 className="h-auto w-full rounded-3xl"
-                width="1280"
+                width="948"
                 height="640"
-                src="/assets/hero.webp"
-                alt="Hero picture"
+                src={item.src}
+                alt={item.alt}
               />
             </div>
           </CarouselItem>
