@@ -47,7 +47,7 @@ export const HomeCarousel = () => {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="my-12 w-9/12 max-w-fit"
+      className="my-12 w-11/12 max-w-fit sm:w-10/12 md:w-8/12"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
@@ -66,8 +66,8 @@ export const HomeCarousel = () => {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="hidden sm:inline-flex" />
+      <CarouselNext className="hidden sm:inline-flex" />
     </Carousel>
   );
 };
