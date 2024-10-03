@@ -20,7 +20,7 @@ const services = [
 ];
 
 export const Services = () => (
-  <section className="my-16 sm:my-20">
+  <section>
     <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
       <div className="flex flex-col gap-12 sm:gap-16">
         <h2 className="text-3xl font-medium tracking-tight sm:text-4xl">
