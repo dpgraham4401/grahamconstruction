@@ -3,7 +3,7 @@ const years =
 const stats = [
   {
     name: 'Years',
-    value: years.toString(),
+    value: `${years.toString()}+`,
   },
   {
     name: 'Projects',
