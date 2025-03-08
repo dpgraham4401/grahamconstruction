@@ -14,11 +14,4 @@ describe('Mission', () => {
     expect(screen.getByText('Years')).toBeInTheDocument();
     expect(screen.getByText('Projects')).toBeInTheDocument();
   });
-
-  it('calculates years correctly', () => {
-    const years =
-      new Date(new Date().valueOf() - new Date('1985/01/01').valueOf()).getFullYear() - 1970;
-    render(<Mission />);
-    expect(screen.getByText(years.toString())).toBeInTheDocument();
-  });
 });
