@@ -3,7 +3,6 @@ import { ContactUsBtn } from 'src/components/ContactUsBtn/ContactUsBtn.tsx';
 import { describe, expect, it } from 'vitest';
 
 describe('ContactUsBtn', () => {
-  const message = 'Get in Touch';
   it('renders default text when no children or text prop is provided', () => {
     render(<ContactUsBtn />);
     expect(screen.getByText('Contact Us')).toBeInTheDocument();
