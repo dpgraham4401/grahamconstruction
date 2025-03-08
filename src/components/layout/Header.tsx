@@ -50,7 +50,7 @@ export const Header = () => {
           <button
             id="menubutton"
             type="button"
-            className="group flex h-14 grow items-center justify-end rounded-lg pl-4 focus-visible:outline-none"
+            className="group flex h-14 grow items-center justify-end rounded-lg pl-4 focus-visible:outline-hidden"
             onClick={() => setOpen((prev) => !prev)}
             aria-expanded={open}
             aria-controls="menu"
@@ -101,7 +101,7 @@ export const Header = () => {
               <a
                 key={link.ref}
                 href={link.href}
-                className="group inline-flex text-2xl font-medium tracking-tight text-primary-950 transition focus-visible:outline-none dark:text-primary-200 sm:py-4 sm:text-4xl"
+                className="group inline-flex text-2xl font-medium tracking-tight text-primary-950 transition focus-visible:outline-hidden dark:text-primary-200 sm:py-4 sm:text-4xl"
               >
                 <div className="flex flex-1 items-center justify-between rounded-3xl group-focus-visible:outline group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200">
                   <div className="flex items-center gap-1">

@@ -67,7 +67,7 @@ export const Expertise = () => {
                   >
                     <button
                       type="button"
-                      className="group block w-full py-6 text-left transition-all focus-visible:outline-none"
+                      className="group block w-full py-6 text-left transition-all focus-visible:outline-hidden"
                       aria-controls={feature.id}
                       onClick={() => toggle(index)}
                       aria-expanded={selected === index}
