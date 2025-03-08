@@ -58,7 +58,7 @@ export const Faq = () => (
                 >
                   <button
                     type="button"
-                    className="group block w-full py-6 text-left transition focus-visible:outline-none"
+                    className="group block w-full py-6 text-left transition focus-visible:outline-hidden"
                     aria-controls={question.id}
                     x-on:click="toggle(id)"
                     aria-expanded="false"
