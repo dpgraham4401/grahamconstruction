@@ -3,7 +3,7 @@ const years =
 const stats = [
   {
     name: 'Years',
-    value: years.toString(),
+    value: `${years.toString()}+`,
   },
   {
     name: 'Projects',
@@ -19,7 +19,7 @@ export const Mission = () => (
           className="mx-auto h-auto w-full max-w-xl rounded-3xl"
           width="576"
           height="864"
-          src="/assets/about.webp"
+          src="/assets/portrait.webp"
           alt="Our experts working together"
         />
         <div className="flex flex-col gap-10">
@@ -27,19 +27,19 @@ export const Mission = () => (
           <div className="space-y-8 sm:space-y-12">
             <h2 className="text-3xl font-medium tracking-tight sm:text-4xl">Our mission</h2>
             <div className="space-y-6">
-              <p className="text-base text-primary-950/70 dark:text-primary-200/70 sm:text-lg">
+              <p className="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
                 Our mission is simple:{' '}
                 <em className="font-semibold">
                   make the process of building your dream home as easy and stress-free as possible
                 </em>
                 .
               </p>
-              <p className="text-base text-primary-950/70 dark:text-primary-200/70 sm:text-lg">
+              <p className="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
                 Remodeling your home can seem daunting; between the designing, planning, budgeting,
                 and construction, it's easy to get overwhelmed. That's where we come in. We'll work
                 with you every step of the way to ensure your vision comes to life.
               </p>
-              <p className="text-base text-primary-950/70 dark:text-primary-200/70 sm:text-lg">
+              <p className="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
                 Whether you're looking to remodel a bathroom, or add an entire second story to your
                 home, we've got you covered.
               </p>
@@ -51,7 +51,7 @@ export const Mission = () => (
             {stats.map((stat) => (
               <div
                 key={stat.name}
-                className="rounded-3xl border border-primary-900/10 p-6 dark:border-primary-300/10"
+                className="border-primary-900/10 dark:border-primary-300/10 rounded-3xl border p-6"
               >
                 <dt className="text-base">{stat.name}</dt>
                 <dd className="text-3xl font-medium tracking-tight">{stat.value}</dd>
