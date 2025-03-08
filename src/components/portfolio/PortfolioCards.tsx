@@ -39,6 +39,26 @@ const placeholders = [
         "They say you can have it fast, cheap or good, but not all three. We'll work with you so save money where we can, fast where you need it, and good where it matters.",
     },
   ],
+  [
+    {
+      ref: '04',
+      name: 'Quality',
+      description:
+        "We've been in the business for over 30 years and we take pride in our work. We'll make sure you're happy with the final product.",
+    },
+    {
+      ref: '05',
+      name: 'Quality',
+      description:
+        "We've been in the business for over 30 years and we take pride in our work. We'll make sure you're happy with the final product.",
+    },
+    {
+      ref: '06',
+      name: 'Transparency',
+      description:
+        "They say you can have it fast, cheap or good, but not all three. We'll work with you so save money where we can, fast where you need it, and good where it matters.",
+    },
+  ],
 ];
 
 export const PortfolioCards = () => (
@@ -46,7 +66,7 @@ export const PortfolioCards = () => (
     <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
       <div className="flex flex-col gap-8 lg:gap-12">
         <h2 className="text-3xl font-medium tracking-tight sm:text-4xl">Our Values</h2>
-        <div className="grid gap-8 lg:grid-cols-2">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {placeholders.map((column, colIndex) => (
             <div key={colIndex} className={`space-y-8 ${colIndex === 1 && 'lg:mt-16'}`}>
               {column.map((value, rowIndex) => {
