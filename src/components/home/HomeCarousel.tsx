@@ -7,11 +7,11 @@ import {
 } from '@/components/ui/Carousel';
 import Autoplay from 'embla-carousel-autoplay';
 import { useRef } from 'react';
-import libraryImage from '../../../public/assets/graham_co_photos/GR3_1244_HDR_WEB.jpg?url';
-import garageImage from '../../../public/assets/graham_co_photos/GR3_1487_HDR_WEB.jpg?url';
-import apartmentBedreoomImage from '../../../public/assets/graham_co_photos/GR3_1639_HDR_WEB.jpg?url';
-import kitchenDenImage from '../../../public/assets/graham_co_photos/GR3_6152_HDR_WEB.jpg?url';
-import billiardsImage from '../../../public/assets/graham_co_photos/GR3_6197_HDR_WEB.jpg?url';
+import libraryImage from '/assets/graham_co_photos/GR3_1244_HDR_WEB.jpg?url';
+import garageImage from '/assets/graham_co_photos/GR3_1487_HDR_WEB.jpg?url';
+import apartmentBedroomImage from '/assets/graham_co_photos/GR3_1639_HDR_WEB.jpg?url';
+import kitchenDenImage from '/assets/graham_co_photos/GR3_6152_HDR_WEB.jpg?url';
+import billiardsImage from '/assets/graham_co_photos/GR3_6197_HDR_WEB.jpg?url';
 
 interface HeroImage {
   src: string;
@@ -32,7 +32,7 @@ const carouselItems: HeroImage[] = [
     alt: 'a traditionally styled kitchen with a large island and a cozy den',
   },
   {
-    src: apartmentBedreoomImage,
+    src: apartmentBedroomImage,
     alt: 'a long bedroom with a fireplace, sliding door closets, and a private bathroom',
   },
   {
