@@ -34,7 +34,7 @@ export const Header = () => {
       <div className="mx-auto flex max-w-2xl items-center justify-between px-4 py-4 sm:px-6 sm:py-6 lg:max-w-7xl lg:px-8">
         <a
           href="/"
-          className="rounded-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200"
+          className="focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200 rounded-md focus-visible:outline"
         >
           <span className="sr-only">Stone</span>
           <img
@@ -86,8 +86,8 @@ export const Header = () => {
         className={`mx-auto max-w-2xl overflow-hidden px-4 transition-all duration-500 ease-in-out sm:px-6 lg:max-w-7xl lg:px-8 ${open ? 'h-52 opacity-100 sm:h-96' : 'invisible h-0 opacity-0'}`}
       >
         <div className="grid grid-cols-1 gap-16 pb-0 sm:pb-24 lg:grid-cols-2">
-          <div className="hidden items-center justify-center rounded-3xl bg-primary-500/10 px-6 py-8 dark:bg-primary-400/10 lg:flex">
-            <p className="max-w-sm text-xl italic leading-loose text-primary-950/70 dark:text-primary-200/70">
+          <div className="bg-primary-500/10 dark:bg-primary-400/10 hidden items-center justify-center rounded-3xl px-6 py-8 lg:flex">
+            <p className="text-primary-950/70 dark:text-primary-200/70 max-w-sm text-xl leading-loose italic">
               <span className="font-medium">Graham Construction</span>is a bespoke residential
               construction company based out of Dallas, Tx, specializing in custom homes and
               remodels.
@@ -95,21 +95,21 @@ export const Header = () => {
           </div>
           <nav
             role="navigation"
-            className="flex flex-col gap-4 divide-y divide-primary-900/10 dark:divide-primary-300/10"
+            className="divide-primary-900/10 dark:divide-primary-300/10 flex flex-col gap-4 divide-y"
           >
             {links.map((link) => (
               <a
                 key={link.ref}
                 href={link.href}
-                className="group inline-flex text-2xl font-medium tracking-tight text-primary-950 transition focus-visible:outline-hidden dark:text-primary-200 sm:py-4 sm:text-4xl"
+                className="group text-primary-950 dark:text-primary-200 inline-flex text-2xl font-medium tracking-tight transition focus-visible:outline-hidden sm:py-4 sm:text-4xl"
               >
-                <div className="flex flex-1 items-center justify-between rounded-3xl group-focus-visible:outline group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200">
+                <div className="group-focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200 flex flex-1 items-center justify-between rounded-3xl group-focus-visible:outline group-focus-visible:outline-2 group-focus-visible:outline-offset-2">
                   <div className="flex items-center gap-1">
                     <span className="text-xs">{link.ref}</span>
                     <span className="group-hover:underline">{link.name}</span>
                   </div>
                   <svg
-                    className="h-6 w-6 text-primary-600 dark:text-primary-400 sm:h-8 sm:w-8"
+                    className="text-primary-600 dark:text-primary-400 h-6 w-6 sm:h-8 sm:w-8"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
