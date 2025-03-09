@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export const ThemeToggle = () => {
   const [isDark, setIsDark] = useState(false);
@@ -23,8 +23,9 @@ export const ThemeToggle = () => {
 
   return (
     <button
-      className="inline-flex h-14 w-14 items-center justify-center rounded-full text-primary-950 ring-primary-950 transition hover:bg-primary-500/10 focus:outline-hidden focus-visible:ring-2 dark:text-primary-200 dark:hover:bg-primary-400/10"
+      className="text-primary-950 ring-primary-950 hover:bg-primary-500/10 dark:text-primary-200 dark:hover:bg-primary-400/10 inline-flex h-14 w-14 items-center justify-center rounded-full transition focus:outline-hidden focus-visible:ring-2"
       onClick={toggleTheme}
+      aria-label="Light/Dark mode toggle"
     >
       {isDark ? (
         <svg
