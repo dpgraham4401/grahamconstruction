@@ -54,7 +54,7 @@ export const Footer = () => (
             Tx, specializing in custom homes and remodels.
           </p>
           <p className="text-primary-950/70 dark:text-primary-200/70 text-sm">
-            © 2024 Graham Construction
+            © 2025 Graham Construction
           </p>
         </div>
 
