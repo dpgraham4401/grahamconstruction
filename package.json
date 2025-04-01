@@ -14,7 +14,7 @@
   "dependencies": {
     "@alpinejs/collapse": "3.14.8",
     "@astrojs/check": "^0.9.4",
-    "@astrojs/react": "^4.2.1",
+    "@astrojs/react": "^4.2.3",
     "@fontsource/inter": "5.1.0",
     "@radix-ui/react-slot": "^1.1.2",
     "@tailwindcss/vite": "^4.0.12",
