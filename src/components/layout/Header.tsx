@@ -36,13 +36,12 @@ export const Header = () => {
           href="/"
           className="focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200 rounded-md focus-visible:outline"
         >
-          <span className="sr-only">Stone</span>
           <img
             className="h-8 w-auto"
             width="65"
             height="40"
             src="/assets/logo.svg"
-            alt="Graham Logo"
+            alt="Graham Construction logo"
           />
         </a>
         <div className="-mr-2 flex items-center space-x-2 sm:space-x-3">
