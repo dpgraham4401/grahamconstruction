@@ -14,9 +14,9 @@
   "dependencies": {
     "@alpinejs/collapse": "3.14.8",
     "@astrojs/check": "^0.9.4",
-    "@astrojs/react": "^4.2.3",
+    "@astrojs/react": "^4.2.7",
     "@fontsource/inter": "5.2.5",
-    "@radix-ui/react-slot": "^1.2.0",
+    "@radix-ui/react-slot": "^1.2.1",
     "@tailwindcss/vite": "^4.0.12",
     "@types/alpinejs": "3.13.10",
     "alpinejs": "3.14.1",
@@ -26,16 +26,15 @@
     "clsx": "^2.1.1",
     "embla-carousel-autoplay": "^8.5.2",
     "embla-carousel-react": "^8.5.2",
-    "lucide-react": "^0.486.0",
+    "lucide-react": "^0.507.0",
     "prettier": "3.5.3",
     "prettier-plugin-astro": "0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.11",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "tailwind-merge": "^3.0.2",
     "tailwindcss": "^4.0.12",
-    "tailwindcss-animate": "^1.0.7",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.3"
   },
   "devDependencies": {
     "@astrojs/ts-plugin": "^1.10.4",

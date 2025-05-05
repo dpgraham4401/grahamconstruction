@@ -34,16 +34,16 @@ export const Header = () => {
       <div className="mx-auto flex max-w-2xl items-center justify-between px-4 py-4 sm:px-6 sm:py-6 lg:max-w-7xl lg:px-8">
         <a
           href="/"
-          className="focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200 rounded-md focus-visible:outline"
+          className="focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200 rounded-md focus-visible:outline flex items-center"
         >
-          <span className="sr-only">Stone</span>
           <img
             className="h-8 w-auto"
             width="65"
             height="40"
             src="/assets/logo.svg"
-            alt="Graham Logo"
+            alt="Graham Construction logo"
           />
+            <span className="text-primary-950/70 dark:text-primary-200/70 text-lg font-medium tracking-tight aria-hidden invisible sm:visible">raham Construction</span>
         </a>
         <div className="-mr-2 flex items-center space-x-2 sm:space-x-3">
           <ThemeToggle />
