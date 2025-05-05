@@ -43,7 +43,7 @@ export const Header = () => {
             src="/assets/logo.svg"
             alt="Graham Construction logo"
           />
-            <span className="text-base not-sr-only aria-hidden">raham Construction</span>
+            <span className="text-primary-950/70 dark:text-primary-200/70 text-lg font-medium tracking-tight aria-hidden invisible sm:visible">raham Construction</span>
         </a>
         <div className="-mr-2 flex items-center space-x-2 sm:space-x-3">
           <ThemeToggle />
