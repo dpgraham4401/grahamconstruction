@@ -34,7 +34,7 @@ export const Header = () => {
       <div className="mx-auto flex max-w-2xl items-center justify-between px-4 py-4 sm:px-6 sm:py-6 lg:max-w-7xl lg:px-8">
         <a
           href="/"
-          className="focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200 rounded-md focus-visible:outline"
+          className="focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200 rounded-md focus-visible:outline flex items-center"
         >
           <img
             className="h-8 w-auto"
@@ -43,6 +43,7 @@ export const Header = () => {
             src="/assets/logo.svg"
             alt="Graham Construction logo"
           />
+            <span className="text-base not-sr-only aria-hidden">raham Construction</span>
         </a>
         <div className="-mr-2 flex items-center space-x-2 sm:space-x-3">
           <ThemeToggle />
