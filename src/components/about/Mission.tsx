@@ -1,3 +1,5 @@
+import portrait from '@/assets/img/portrait.webp?url';
+
 const years =
   new Date(new Date().valueOf() - new Date('1985/01/01').valueOf()).getFullYear() - 1970;
 const stats = [
@@ -19,7 +21,7 @@ export const Mission = () => (
           className="mx-auto h-auto w-full max-w-xl rounded-3xl"
           width="576"
           height="864"
-          src="/assets/portrait.webp"
+          src={portrait}
           alt="Our experts working together"
         />
         <div className="flex flex-col gap-10">
