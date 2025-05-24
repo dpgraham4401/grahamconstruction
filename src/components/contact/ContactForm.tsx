@@ -1,4 +1,4 @@
-import emmaMajestic from '/assets/emma_majestic.webp?url';
+import emmaMajestic from '@/assets/img/emma_majestic.webp?url';
 
 export const ContactForm = () => (
   <section className="py-16 sm:py-20">

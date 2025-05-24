@@ -1,3 +1,5 @@
+import logo from '@/assets/img/logo.svg?url';
+
 const bottomLinks = [
   {
     header: 'Company',
@@ -46,7 +48,7 @@ export const Footer = () => (
             className="h-8 w-auto"
             width="65"
             height="40"
-            src="/assets/logo.svg"
+            src={logo}
             alt="Graham Construction Logo"
           />
           <p className="text-primary-950/70 dark:text-primary-200/70 text-base">
