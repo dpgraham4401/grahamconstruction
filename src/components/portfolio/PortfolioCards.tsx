@@ -1,3 +1,4 @@
+import { FadeIn } from '@/components/ui/FadeIn.tsx';
 import { allGrahamPhotos, type HeroImage } from '@/lib/photos.ts';
 
 const splitIntoColumns = (arr: HeroImage[], colCount: number): HeroImage[][] => {
@@ -24,7 +25,9 @@ export const PortfolioCards = () => {
                 return (
                   <div key={value.src} className={`flex flex-col gap-6 rounded-3xl px-3 py-4`}>
                     <div className="flex flex-col gap-2">
-                      <img src={value.src} alt={value.alt} className="rounded-3xl" />
+                      <FadeIn>
+                        <img src={value.src} alt={value.alt} className="rounded-3xl" />
+                      </FadeIn>
                     </div>
                   </div>
                 );
