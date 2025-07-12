@@ -37,13 +37,7 @@ export const Header = () => {
           href="/"
           className="focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200 flex items-center rounded-md focus-visible:outline"
         >
-          <img
-            className="h-8 w-auto"
-            width="65"
-            height="40"
-            src={logo}
-            alt="Graham Construction logo"
-          />
+          <img className="h-16 w-auto" src={logo} alt="Graham Construction logo" />
           <span className="text-primary-950/70 dark:text-primary-200/70 aria-hidden invisible text-lg font-medium tracking-tight sm:visible">
             raham Construction
           </span>
