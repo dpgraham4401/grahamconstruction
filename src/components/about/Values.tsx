@@ -1,3 +1,5 @@
+import { FadeIn } from '@/components/ui/FadeIn.tsx';
+
 const values = [
   [
     {
@@ -45,11 +47,13 @@ export const Values = () => (
                     key={value.ref}
                     className={`flex flex-col gap-12 rounded-3xl ${isAccented ? 'bg-secondary-500/10 dark:bg-primary-200/80' : 'bg-primary-500/10 dark:bg-primary-400/10'} px-6 py-8`}
                   >
-                    <p className={`${textColor} text-sm`}>{value.ref}</p>
-                    <div className="flex flex-col gap-4">
-                      <h3 className={`${textColor} text-xl font-medium`}>{value.name}</h3>
-                      <p className={`text-base ${textColor} sm:text-lg`}>{value.description}</p>
-                    </div>
+                    <FadeIn>
+                      <p className={`${textColor} text-sm`}>{value.ref}</p>
+                      <div className="flex flex-col gap-4">
+                        <h3 className={`${textColor} text-xl font-medium`}>{value.name}</h3>
+                        <p className={`text-base ${textColor} sm:text-lg`}>{value.description}</p>
+                      </div>
+                    </FadeIn>
                   </div>
                 );
               })}
