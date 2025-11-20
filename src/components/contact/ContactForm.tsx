@@ -19,7 +19,7 @@ export const ContactForm = () => (
         </div>
         <div className="lg:mt-32">
           <form
-            action="https://formsubmit.co/73ee075b416e0b36f581ee570dc11ed3"
+            action="https://formsubmit.co/c39c22608d77f88cecaa5d2d80f070ad"
             method="POST"
             className="mt-3 flex flex-col gap-y-6"
           >

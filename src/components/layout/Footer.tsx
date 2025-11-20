@@ -62,11 +62,11 @@ export const Footer = () => (
 
         <div className="grid max-w-xl flex-1 grid-cols-1 gap-8 sm:grid-cols-3">
           {bottomLinks.map((group) => (
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4" key={group.header}>
               <p className="text-2xl font-medium">{group.header}</p>
               <ul role="list" className="flex flex-col gap-3">
                 {group.links.map((link) => (
-                  <li>
+                  <li key={link.name}>
                     <a
                       href={link.href}
                       className="focus-visible:outline-primary-950 dark:focus-visible:outline-primary-200 inline-flex items-center gap-1 rounded-md text-base hover:underline focus-visible:outline focus-visible:outline-2"
