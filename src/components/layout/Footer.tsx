@@ -29,6 +29,11 @@ const bottomLinks = [
         href: '/portfolio',
         isExternal: false,
       },
+      {
+        name: "Guy Roger's Photography",
+        href: 'https://thirdguy.com/',
+        isExternal: true,
+      },
     ],
   },
 ];
@@ -60,7 +65,7 @@ export const Footer = () => (
           </p>
         </div>
 
-        <div className="grid max-w-xl flex-1 grid-cols-1 gap-8 sm:grid-cols-3">
+        <div className="grid max-w-xl flex-1 grid-cols-1 gap-4 sm:grid-cols-2">
           {bottomLinks.map((group) => (
             <div className="flex flex-col gap-4" key={group.header}>
               <p className="text-2xl font-medium">{group.header}</p>
