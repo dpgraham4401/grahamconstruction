@@ -3,11 +3,11 @@ name: 'Tests'
 
 on:
   pull_request:
-    branches: [ 'main' ]
-
+    branches:
+      - main
 
 jobs:
-  run_unit_tests:
+  unit_tests:
     name: 'Unit Tests'
     runs-on: ubuntu-latest
     steps:
@@ -50,3 +50,37 @@ jobs:
       - name: 'Build'
         run: pnpm build
 
+  e2e_test:
+    name: 'End to End Tests'
+    timeout-minutes: 30
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout'
+        uses: actions/checkout@v6
+
+      - name: 'Install pnpm'
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: 'Setup Node.js'
+        uses: actions/setup-node@v6
+        with:
+          node-version: lts/*
+
+      - name: 'Install dependencies'
+        run: pnpm install
+
+      - name: 'Install Playwright Browsers'
+        run: pnpm exec playwright install --with-deps
+
+      - name: 'Run Playwright tests'
+        run: pnpm exec playwright test
+
+      - name: 'Upload Playwright report'
+        uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30
