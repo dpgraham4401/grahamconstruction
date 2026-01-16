@@ -18,22 +18,14 @@ in residential construction and remodeling projects. This project is a redesign 
 
 ## Getting Started
 
-### Install dependencies
-
 ```
-npm install
-```
-
-### Development Server
-
-```
-npm run dev
+pnpm dev
 ```
 
 ### Build
 
 ```
-npm run build
+pnpm build
 ```
 
 This builds the app for production to the `./dist/` folder.
