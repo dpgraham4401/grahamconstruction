@@ -4,6 +4,10 @@ dist/
 # generated types
 .astro/
 
+# Other pacakge manager files
+package-lock.json
+yarn.lock
+
 # dependencies
 node_modules/
 
