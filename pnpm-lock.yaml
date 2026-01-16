@@ -63,6 +63,15 @@ importers:
       '@playform/compress':
         specifier: ^0.2.1
         version: 0.2.1(@types/node@25.0.9)(jiti@2.6.1)(rollup@4.55.1)(typescript@5.9.3)(yaml@2.8.2)
+      '@playwright/browser-chromium':
+        specifier: ^1.57.0
+        version: 1.57.0
+      '@playwright/browser-firefox':
+        specifier: ^1.57.0
+        version: 1.57.0
+      '@playwright/browser-webkit':
+        specifier: ^1.57.0
+        version: 1.57.0
       '@playwright/test':
         specifier: ^1.57.0
         version: 1.57.0
@@ -835,6 +844,18 @@ packages:
 
   '@playform/pipe@0.1.4':
     resolution: {integrity: sha512-SM3iJ5VHA61NsYMrtvk8DAZwkrpPtBCiJnfWjj1iX6Ke/hnHLqVjTmkXG087UMOa9Z+3J/zUoAkzf3Al6tiS8A==}
+
+  '@playwright/browser-chromium@1.57.0':
+    resolution: {integrity: sha512-pUg+2p6HwewLp8KCD9G6VYaS2iewdkNkyqMcSIxXBXOlp1ojTxLF6/bwyR4ixLMy6tyv75jhE8PzzMZiX5KzwQ==}
+    engines: {node: '>=18'}
+
+  '@playwright/browser-firefox@1.57.0':
+    resolution: {integrity: sha512-Kb9CUiCDqm/1yQVyzcQfXvg8EqVW9YXwJJ/7nvr1ekeV2XX1n5FHrzm1rPiZV13Rk1mBeuWrBNook+HmwCTLpw==}
+    engines: {node: '>=18'}
+
+  '@playwright/browser-webkit@1.57.0':
+    resolution: {integrity: sha512-BiSFhr2hgt3WTAuzAZuk79Qy9KeLDjrCL2PzmKrxd+DG0kgSzwCrkl6SNFe9cMceTB8ExrP4wgFIcSZktsJnaw==}
+    engines: {node: '>=18'}
 
   '@playwright/test@1.57.0':
     resolution: {integrity: sha512-6TyEnHgd6SArQO8UO2OMTxshln3QMWBtPGrOCgs3wVEmQmwyuNtB10IZMfmYDE0riwNR1cu4q+pPcxMVtaG3TA==}
@@ -3776,6 +3797,18 @@ snapshots:
       '@types/node': 25.0.3
       deepmerge-ts: 7.1.5
       fast-glob: 3.3.3
+
+  '@playwright/browser-chromium@1.57.0':
+    dependencies:
+      playwright-core: 1.57.0
+
+  '@playwright/browser-firefox@1.57.0':
+    dependencies:
+      playwright-core: 1.57.0
+
+  '@playwright/browser-webkit@1.57.0':
+    dependencies:
+      playwright-core: 1.57.0
 
   '@playwright/test@1.57.0':
     dependencies:

@@ -32,6 +32,9 @@
   "devDependencies": {
     "@astrojs/ts-plugin": "^1.10.6",
     "@playform/compress": "^0.2.1",
+    "@playwright/browser-chromium": "^1.57.0",
+    "@playwright/browser-firefox": "^1.57.0",
+    "@playwright/browser-webkit": "^1.57.0",
     "@playwright/test": "^1.57.0",
     "@tailwindcss/vite": "^4.1.18",
     "@testing-library/dom": "^10.4.1",
