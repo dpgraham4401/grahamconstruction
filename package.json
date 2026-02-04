@@ -24,7 +24,7 @@
     "embla-carousel-autoplay": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
     "lucide-react": "^0.562.0",
-    "react": "^19.2.3",
+    "react": "^19.2.4",
     "react-dom": "^19.2.3",
     "sharp": "^0.34.5",
     "tailwind-merge": "^3.4.0"
@@ -44,7 +44,7 @@
     "@types/alpinejs": "3.13.10",
     "@types/alpinejs__collapse": "^3.13.4",
     "@types/node": "^25.0.9",
-    "@types/react": "^19.2.8",
+    "@types/react": "^19.2.11",
     "@types/react-dom": "^19.2.3",
     "jsdom": "^27.4.0",
     "prettier": "3.8.1",
