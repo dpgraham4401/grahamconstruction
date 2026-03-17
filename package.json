@@ -13,12 +13,12 @@
   },
   "dependencies": {
     "@alpinejs/collapse": "3.14.9",
-    "@astrojs/check": "^0.9.6",
-    "@astrojs/react": "^4.4.2",
+    "@astrojs/check": "^0.9.8",
+    "@astrojs/react": "^5.0.0",
     "@fontsource/inter": "5.2.5",
     "@radix-ui/react-slot": "^1.2.4",
     "alpinejs": "3.14.1",
-    "astro": "^5.16.10",
+    "astro": "^6.0.5",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "embla-carousel-autoplay": "^8.6.0",
@@ -30,7 +30,7 @@
     "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
-    "@astrojs/ts-plugin": "^1.10.6",
+    "@astrojs/ts-plugin": "^1.10.7",
     "@playform/compress": "^0.2.1",
     "@playwright/browser-chromium": "^1.57.0",
     "@playwright/browser-firefox": "^1.57.0",
