@@ -67,8 +67,8 @@ importers:
         specifier: ^1.58.2
         version: 1.58.2
       '@playwright/browser-firefox':
-        specifier: ^1.58.2
-        version: 1.58.2
+        specifier: ^1.59.1
+        version: 1.59.1
       '@playwright/browser-webkit':
         specifier: ^1.58.2
         version: 1.58.2
@@ -897,8 +897,8 @@ packages:
     resolution: {integrity: sha512-/HHFVVP2pzEtqBVOFRoWlDtBoO8bzIWOqS62APdm3OhYbE2+kVUs/ALpkevvAKKfY0DMDVezYN22bDBh77UQ9Q==}
     engines: {node: '>=18'}
 
-  '@playwright/browser-firefox@1.58.2':
-    resolution: {integrity: sha512-XPfMg22AySjg4L41v7posax4/y7E/Ole3pdno7dNsU46qzi8jU9RzNuIqPHqr78Lr7nRHgnOVZkEeNUjKxWPeQ==}
+  '@playwright/browser-firefox@1.59.1':
+    resolution: {integrity: sha512-PPGJ/vYsmlnjsWrRHZ2u1RZqJf0p2quTcJW204Mbz1Gv7nvVxjCYWfZkuAe0Kl/lIU612J7wnHo3wxTVvtWycQ==}
     engines: {node: '>=18'}
 
   '@playwright/browser-webkit@1.58.2':
@@ -2372,6 +2372,11 @@ packages:
 
   playwright-core@1.58.2:
     resolution: {integrity: sha512-yZkEtftgwS8CsfYo7nm0KE8jsvm6i/PTgVtB8DL726wNf6H2IMsDuxCpJj59KDaxCtSnrWan2AeDqM7JBaultg==}
+    engines: {node: '>=18'}
+    hasBin: true
+
+  playwright-core@1.59.1:
+    resolution: {integrity: sha512-HBV/RJg81z5BiiZ9yPzIiClYV/QMsDCKUyogwH9p3MCP6IYjUFu/MActgYAvK0oWyV9NlwM3GLBjADyWgydVyg==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -3852,9 +3857,9 @@ snapshots:
     dependencies:
       playwright-core: 1.58.2
 
-  '@playwright/browser-firefox@1.58.2':
+  '@playwright/browser-firefox@1.59.1':
     dependencies:
-      playwright-core: 1.58.2
+      playwright-core: 1.59.1
 
   '@playwright/browser-webkit@1.58.2':
     dependencies:
@@ -5546,6 +5551,8 @@ snapshots:
   picomatch@4.0.4: {}
 
   playwright-core@1.58.2: {}
+
+  playwright-core@1.59.1: {}
 
   playwright@1.58.2:
     dependencies:
