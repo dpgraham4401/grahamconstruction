@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
+    "devWrangler": "astro build && wrangler pages dev ./dist",
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
@@ -19,7 +20,7 @@
     "@fontsource/inter": "5.2.5",
     "@radix-ui/react-slot": "^1.2.4",
     "alpinejs": "3.14.1",
-    "astro": "^6.1.10",
+    "astro": "^6.0.5",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "embla-carousel-autoplay": "^8.6.0",
@@ -34,7 +35,7 @@
     "@astrojs/ts-plugin": "^1.10.7",
     "@playform/compress": "^0.2.2",
     "@playwright/browser-chromium": "^1.58.2",
-    "@playwright/browser-firefox": "^1.59.1",
+    "@playwright/browser-firefox": "^1.58.2",
     "@playwright/browser-webkit": "^1.58.2",
     "@playwright/test": "^1.58.2",
     "@tailwindcss/vite": "^4.2.1",
@@ -50,9 +51,10 @@
     "jsdom": "^29.0.0",
     "prettier": "3.8.1",
     "prettier-plugin-astro": "0.14.1",
-    "prettier-plugin-tailwindcss": "^0.8.0",
+    "prettier-plugin-tailwindcss": "^0.7.2",
     "tailwindcss": "^4.2.1",
     "typescript": "^5.9.3",
-    "vitest": "^4.1.2"
+    "vitest": "^4.1.0",
+    "wrangler": "^4.103.0"
   }
 }

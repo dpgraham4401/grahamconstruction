@@ -4,3 +4,4 @@ onlyBuiltDependencies:
   - '@playwright/browser-webkit'
   - esbuild
   - sharp
+  - workerd
