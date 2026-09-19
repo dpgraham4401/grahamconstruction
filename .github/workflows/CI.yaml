@@ -20,7 +20,7 @@ jobs:
       - name: 'Setup Node'
         uses: actions/setup-node@v6
         with:
-          node-version: lts/*
+          node-version-file: ".nvmrc"
 
       - name: 'Install Dependencies'
         run: pnpm install
@@ -43,7 +43,7 @@ jobs:
       - name: 'Setup Node'
         uses: actions/setup-node@v6
         with:
-          node-version: lts/*
+          node-version-file: ".nvmrc"
 
       - name: 'Install Dependencies'
         run: pnpm install
@@ -65,7 +65,7 @@ jobs:
       - name: 'Setup Node.js'
         uses: actions/setup-node@v6
         with:
-          node-version: lts/*
+          node-version-file: ".nvmrc"
 
       - name: 'Install dependencies'
         run: pnpm install
