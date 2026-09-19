@@ -29,7 +29,7 @@
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "sharp": "^0.35.0",
-    "tailwind-merge": "^3.6.0"
+    "tailwind-merge": "^3.7.0"
   },
   "devDependencies": {
     "@astrojs/ts-plugin": "^1.10.12",
@@ -38,7 +38,7 @@
     "@playwright/browser-firefox": "^1.61.0",
     "@playwright/browser-webkit": "^1.61.0",
     "@playwright/test": "^1.61.0",
-    "@tailwindcss/vite": "^4.3.1",
+    "@tailwindcss/vite": "^4.3.3",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
@@ -51,9 +51,9 @@
     "jsdom": "^29.1.1",
     "prettier": "3.8.1",
     "prettier-plugin-astro": "0.14.1",
-    "prettier-plugin-tailwindcss": "^0.7.4",
-    "tailwindcss": "^4.3.1",
-    "typescript": "^5.9.3",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^6.0.3",
     "vitest": "^4.1.9",
     "wrangler": "^4.135.0"
   }
