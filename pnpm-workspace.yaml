@@ -1,7 +1,6 @@
-onlyBuiltDependencies:
-  - '@playwright/browser-chromium'
-  - '@playwright/browser-firefox'
-  - '@playwright/browser-webkit'
-  - esbuild
-  - sharp
-  - workerd
+allowBuilds:
+  '@playwright/browser-chromium': true
+  '@playwright/browser-firefox': true
+  '@playwright/browser-webkit': true
+  esbuild: true
+  workerd: true
